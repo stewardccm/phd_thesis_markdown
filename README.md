@@ -48,7 +48,7 @@ There are some minor annoyances:
     - [Pandoc](http://johnmacfarlane.net/pandoc), for converting the Markdown to the output format of your choice.  You may also need to install [Pandoc cite-proc](http://pandoc.org/demo/example19/Extension-citations.html) to create the bibliography.
     - Install @martisak's shortcaption module for Pandoc, with `pip install pandoc-shortcaption`
     - Git, for version control.
-2. [Fork the repository](https://github.com/tompollard/phd_thesis_markdown/fork) on Github  
+2. [Fork the repository](https://github.com/UG-CS-HKBU/phd_thesis_markdown/fork) on Github  
 3. Clone the repository onto your local computer (or [download the Zip file](https://github.com/tompollard/phd_thesis_markdown/archive/master.zip)).  
 4. Navigate to the directory that contains the Makefile and type "make pdf" (or "make html") at the command line to update the PDF (or HTML) in the output directory.  
 **In case of an error** (e.g. `make: *** [pdf] Error 43`) run the following commands:  
