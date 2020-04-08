@@ -6,3 +6,5 @@ As a cosmopolitan city, Hong Kong is also a fashion city. Hong Kong has trained 
 
 \pagenumbering{roman}
 \setcounter{page}{1}
+
+\newpage
