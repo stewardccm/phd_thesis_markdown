@@ -18,7 +18,7 @@ I hereby declare that all the work done in this Final Year Project is of my inde
 \vspace*{2.5cm}
 
 $\rule{5cm}{0.15mm}$ \newline
-LEE Tai Chung, Tim
+Chan Chi Man
 
 \vspace*{2.5cm}
 
@@ -44,7 +44,7 @@ We hereby recommend that the Final Year Project submitted by LEE Tai Chung, Tim 
 
 \itab{$\rule{5cm}{0.15mm}$} \tab{$\rule{5cm}{0.15mm}$}
 
-\itab{Dr. Abel B.C. Ding} \tab{Dr. Esther F.G. Hung}
+\itab{Dr. CHOY, Martin Man Ting} \tab{Dr. FENG, Jian}
 
 \itab{Supervisor} \tab{Observer} 
 
