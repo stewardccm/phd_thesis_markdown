@@ -38,7 +38,7 @@ Computer Science Department
 
 \vspace*{1.5cm}
 
-We hereby recommend that the Final Year Project submitted by LEE Tai Chung, Tim entitled "Management System for Personnel Agency" be accepted in partial fulfillment of the requirements for the degree of Bachelor of Science (Honours) in Computer Science.
+We hereby recommend that the Final Year Project submitted by Chan Chi Man entitled "The online fashion operation platform" be accepted in partial fulfillment of the requirements for the degree of Bachelor of Science (Honours) in Computer Science.
 
 \vspace*{2.5cm}
 
