@@ -40,20 +40,28 @@ Lastly, the image recognition function need a huge library which have trained. D
 
 #### Connected with Magento API
 
-![Index Page \label{ref_a_figure}](source/figures/01.png){ width=100% }
-![Product Detail \label{ref_a_figure}](source/figures/02.png){ width=100% }
-![Explore \label{ref_a_figure}](source/figures/03.png){ width=100% }
-![Login \label{ref_a_figure}](source/figures/04.png){ width=100% }
+![Index Page \label{ref_a_figure}](source/figures/01.png){ width=50% }
+
+![Product Detail \label{ref_a_figure}](source/figures/02.png){ width=50% }
+
+![Explore \label{ref_a_figure}](source/figures/03.png){ width=50% }
+
+![Login \label{ref_a_figure}](source/figures/04.png){ width=50% }
 
 #### Withoutconnect Magento API
 
-![Index Page \label{ref_a_figure}](source/figures/05.png){ width=100% }
-![Catalog \label{ref_a_figure}](source/figures/06.png){ width=100% }
-![Product Detail \label{ref_a_figure}](source/figures/07.png){ width=100% }
-![Search \label{ref_a_figure}](source/figures/08.png){ width=100% }
+![Index Page \label{ref_a_figure}](source/figures/05.png){ width=50% }
+
+![Catalog \label{ref_a_figure}](source/figures/06.png){ width=50% }
+
+![Product Detail \label{ref_a_figure}](source/figures/07.png){ width=50% }
+
+![Search \label{ref_a_figure}](source/figures/08.png){ width=50% }
 
 ### Web Platform
 
-![Index Page \label{ref_a_figure}](source/figures/09.jpg){ width=100% }
-![Product Detail \label{ref_a_figure}](source/figures/10.jpg){ width=100% }
-![Checkout \label{ref_a_figure}](source/figures/11.png){ width=100% }
+![Index Page \label{ref_a_figure}](source/figures/09.jpg){ width=50% }
+
+![Product Detail \label{ref_a_figure}](source/figures/10.jpg){ width=50% }
+
+![Checkout \label{ref_a_figure}](source/figures/11.png){ width=50% }
