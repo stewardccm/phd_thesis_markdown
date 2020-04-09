@@ -36,32 +36,34 @@ Lastly, the image recognition function need a huge library which have trained. D
 
 ## UI Design
 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
+
 ### Mobile Platform
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
 
 #### Connected with Magento API
 
-![Index Page \label{ref_a_figure}](source/figures/01.png){ width=50% }
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
 
-![Product Detail \label{ref_a_figure}](source/figures/02.png){ width=50% }
+![(a) Index Page, (b) Product Detail](source/figures/0102.png){width=100%}
 
-![Explore \label{ref_a_figure}](source/figures/03.png){ width=50% }
-
-![Login \label{ref_a_figure}](source/figures/04.png){ width=50% }
+![(a) Explore, (b) Login](source/figures/0304.png){width=100%}
 
 #### Withoutconnect Magento API
 
-![Index Page \label{ref_a_figure}](source/figures/05.png){ width=50% }
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
 
-![Catalog \label{ref_a_figure}](source/figures/06.png){ width=50% }
+![(a) Index Page, (b) Catalog](source/figures/0506.png){width=100%}
 
-![Product Detail \label{ref_a_figure}](source/figures/07.png){ width=50% }
-
-![Search \label{ref_a_figure}](source/figures/08.png){ width=50% }
+![(a) Product Detail, (b) Search](source/figures/0708.png){width=100%}
 
 ### Web Platform
 
-![Index Page \label{ref_a_figure}](source/figures/09.jpg){ width=50% }
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@blair_2019_mobile]
 
-![Product Detail \label{ref_a_figure}](source/figures/10.jpg){ width=50% }
+![Index Page \label{ref_a_figure}](source/figures/09.jpg){width=100%}
 
-![Checkout \label{ref_a_figure}](source/figures/11.png){ width=50% }
+![Product Detail \label{ref_a_figure}](source/figures/10.jpg){width=100%}
+
+![Checkout \label{ref_a_figure}](source/figures/11.png){width=100%}

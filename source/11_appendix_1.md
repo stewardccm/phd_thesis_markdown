@@ -1,6 +1,4 @@
-# Appendix A
-
-## Project Schedule
+# Appendix 1: Project Schedule {.unnumbered}
 
 ```mermaid
 gantt
