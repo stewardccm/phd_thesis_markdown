@@ -235,13 +235,9 @@ As given in Figure 4.1(a), our index page will show the banner, discount product
 
 Product Detail, as given in Figure 4.1(b), will show the product gallery, basic information and the option of the product. 
 
-![(a) Index Page, (b) Product Detail](source/figures/0102.png){width=100%}
-
 Search page, as given in Figure 4.2(a), uses for search the product by keywords.
 
 Figure 4.2(b) shows the login page.
-
-![(a) Explore, (b) Login](source/figures/0304.png){width=100%}
 
 ### Withoutconnect Magento API
 
@@ -249,15 +245,19 @@ This is the user interface of the mobile application with the dump data and for 
 
 Figure 4.3 shows the index and catalog pages:
 
-![(a) Index Page, (b) Catalog](source/figures/0506.png){width=100%}
-
 Figure 4.4 shows the product detail and search pages:
-
-![(a) Product Detail, (b) Search](source/figures/0708.png){width=100%}
 
 ## UI Design - Web Platform
 
 Figure 4.5, 4.6 and 4.7 show index page, product detail page adn checkout pages of our web platform.
+
+![(a) Index Page, (b) Product Detail](source/figures/0102.png){width=100%}
+
+![(a) Explore, (b) Login](source/figures/0304.png){width=100%}
+
+![(a) Index Page, (b) Catalog](source/figures/0506.png){width=100%}
+
+![(a) Product Detail, (b) Search](source/figures/0708.png){width=100%}
 
 ![Index page \label{ref_a_figure}](source/figures/09.jpg){width=100%}
 
