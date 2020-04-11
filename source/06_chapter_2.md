@@ -1,11 +1,5 @@
 # Proposed Solution
 
-<!--
-After the introductory chapter, it seems fairly common to 
-include a chapter that reviews the literature and 
-introduces methodology used throughout the thesis.
--->
-
 ## Scope of the proposed solution
 
 The solution should include the following components.
