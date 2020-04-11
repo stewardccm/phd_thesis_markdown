@@ -9,3 +9,11 @@ As time moved on while developing the platform, it encountered many different ch
 ## Quality of implementation
 
 As the project did some changes to the design to the overall of the platform, the implementation of the actual platform does a huge different from the previously designed one. For example, the project has to shift the focus entirely away from the building of the web store and cut off the mobile application for designers to ensure the development of the rest of the platform is close to the requirement of the CST student. But overall, most of the users retain their intended functions, the designers are still available to control their settings, and have data analyse service. Customers can browser and search the product from the web store and mobile application. As for the programming techniques, Magento is the main framework for the web application and React Native is used in iOS and Android application.
+
+## Development Difficulties
+
+Since the project time period limitation and the requirement of the CST student, the mainly development in this project will more force on how to use a cross-platform language can be use to built a native like mobile application that can function on both iOS and Android system. Therefore, the web store with Mangeto is only have the basic function that provided by the framework and the development of the mobile application for designers is cut off.
+
+In addition, the version of the React Native I used is the latest version. However, some of the plugins are not yet support the latest one, like use Apple Pay / Google Pay for in-store purchase, therefore it cannot be provided in this demo. 
+
+Lastly, the image recognition function need a huge library which have trained. During to the time limited,  MobileNet pre-trained model is used for the image recognition. The data which the model provided is not what this project need, therefore it is only for demo usage only.

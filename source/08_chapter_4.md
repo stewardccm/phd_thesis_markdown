@@ -26,7 +26,7 @@ As the problem of lacking contact to the designer, customers can contact the des
 
 After doing the research, the React Native in cross-platform application is the most suitable for this project to complete in a short periods.
 
-### Frontend
+## Frontend
 
 Magento 2 is not a Model, View, Controller system. It is a system similar to Model, View, ViewModel (MVVM), but the architects have not given it a specific name.
 
@@ -48,9 +48,9 @@ When create new features in the Magento 2 system, it is often necessary to clear
 
 In order to speed up the system, in addition to the cache file, Magento 2 also generates many boilerplate classes. These files are placed in the var/generation path. When there has modify some configuration or code files, it is usually necessary to regenerate these files. Currently, there is no method, ever CLI or backend, that can help regenerate. The only way is to manually delete the files under var/generation.
 
-### Database
+## Database
 
-#### ORM
+### ORM
 
 Magenta is a very complete packaging framework. In addition to practicing the spirit of many design patterns, there are also some other patterns in it, such as the ORM architecture is one of them.
 
@@ -62,69 +62,69 @@ In Magento 2 architecture, the principle of one data table is mainly correspondi
 
 Using Magento to operate the database through the ORM method not only increases the readability and maintenance of the program, but also greatly improves the security of the program. It is a good way to prevent SQL injection attacks.
 
-#### EAV
+### EAV
 
 In the Magento database, there are more than three hundred data sheets, and the data structure used in it is EAV. EAV is a relationship model derived from database management technology, where E of EAV is an Entity, each entity represents an object in the Magento system, and is stored in the database with an independent ID, such as, products, orders, customers, catalog, etc. A represents the Attribute, the attribute is the nature of each object in the Magento system, for example, the product has a name, price, quantity, etc. And V is the Value, which is the value of the attributes. Magento is through such a data model to access data in various formats.
 
 Entity is defined as entity type in Magento internal program, and the built-in Entity type has the following eight types, which can also be added manually, and the new Entity type will be added in the table of eav_entity_type.
 
-![eav_entity_type \label{ref_a_figure}](source/figures/12.png){ width=100% }
+![eav_entity_type \label{ref_a_figure}](source/figures/12.png){ width=100% } \
 
 As mentioned above, each entity has different attributes, so each Attribute will correspond to the Entity type, such as the product name, price, quantity, etc., or the customer's name, phone, address, etc., and all Attributes will be stored in eav_attribute in this table, for customers with entity_type_id of 1, the blocks in the eav_attibute table are as follows.
 
-![eav_attibute \label{ref_a_figure}](source/figures/13.png){ width=100% }
+![eav_attibute \label{ref_a_figure}](source/figures/13.png){ width=100% } \
 
 The different values possessed by the attribute will be stored in the data table, the schematic diagram is as follows.
 
-![catalog_category_entity_varchar \label{ref_a_figure}](source/figures/14.png){ width=100% }
+![catalog_category_entity_varchar \label{ref_a_figure}](source/figures/14.png){ width=100% } \
 
 Compared with other database structures, EAV has greater flexibility to allow development of expansion kits, without changing the core database structure, it is easier and faster to add attributes and data.
 
-### API
+## API
 
 Magenta 2 comes with APIs based on SOAP and REST. There is no longer an API based on XML-RPC. From the perspective of business logic, APIs based on SOAP and REST are equivalent. In addition to providing programmers with a way to programmatically interact with a single independent Magento instance without writing native Magento or PHP code, the Magento 2 REST API is also designed to allow browser-based client-side Javascript code to access API calls. Becasue this project uses React Native, which is mainly in Javascript, as a mobile application development, Magento 2 REST API is the main API method, so the data obtained through the API will be returned in JSON format.
 
 Magento 2 REST APIs used in this project: 
 
-| Name                                    | Method | Description                                                  |
-| --------------------------------------- | ------ | ------------------------------------------------------------ |
-| carts/mine                              | PUT    | Save quote                                                   |
-| carts/mine                              | POST   | Creates an empty cart and quote for a specified customer if customer does not have a cart yet. |
-| carts/mine                              | GET    | Returns information for the cart for a specified customer.   |
-| carts/mine/balance/apply                | POST   | Apply store credit                                           |
-| carts/mine/billing-address              | GET    | Returns the billing address for a specified quote.           |
-| carts/mine/billing-address              | POST   | Assigns a specified billing address to a specified cart.     |
-| carts/mine/checkGiftCard/{giftCardCode} | GET    | Check gift card balance if applied to given cart.            |
-| carts/mine/collect-totals               | PUT    | Set shipping/billing methods and additional data for cart and collect totals. |
-| carts/mine/coupons                      | GET    | Returns information for a coupon in a specified cart.        |
-| carts/mine/coupons                      | DELETE | Deletes a coupon from a specified cart.                      |
-| carts/mine/coupons/{couponCode}         | PUT    | Adds a coupon by code to a specified cart.                   |
-| carts/mine/delivery-option              | POST   | Handle selected delivery option.                             |
-| carts/mine/estimate-shipping-methods    | POST   | Estimate shipping by address and return list of available shipping methods. |
-| carts/mine/giftCards                    | POST   | Add gift card to the cart.                                   |
-| carts/mine/giftCards/{giftCardCode}     | DELETE | Remove GiftCard Account entity                               |
-| carts/mine/items                        | POST   | Add/update the specified cart item.                          |
-| carts/mine/items/{itemId}               | PUT    | Add/update the specified cart item.                          |
-| carts/mine/items/{itemId}               | DELETE | Removes the specified item from the specified cart.          |
-| carts/mine/order                        | PUT    | Places an order for a specified cart.                        |
-| carts/mine/payment-information          | POST   | Set payment information and place order for a specified cart. |
-| carts/mine/payment-information          | GET    | Get payment information                                      |
-| carts/mine/payment-methods              | GET    | Lists available payment methods for a specified shopping cart. This call returns an array of objects, but detailed information about each object’s attributes might not be included. |
-| carts/mine/totals                       | GET    | Returns quote totals data for a specified cart.              |
-| carts/mine/totals-information           | POST   | Calculate quote totals based on address and shipping method. |
-| products                                | GET    | Get product list                                             |
-| products/cost-information               | POST   | Return product prices. In case of at least one of skus is not found exception will be thrown. |
-| products/special-price-information      | POST   | Return product's special price. In case of at least one of skus is not found exception will be thrown. |
-| products/{sku}                          | GET    | Get info about product by product SKU                        |
-| products/{sku}/media                    | GET    | Retrieve the list of gallery entries associated with given product |
-| products/{sku}/options                  | GET    | Get the list of custom options for a specific product        |
-| products-render-info                    | GET    | Collect and retrieve the list of product render info. This info contains raw prices and formatted prices, product name, stock status, store_id,  etc. |
-| search                                  | GET    | Make Full Text Search and return found Documents             |
-| stockStatuses/{productSku}              | GET    | Get the stock statuses for a specific product                |
+| Endpoint                   | Method  | Description                 |
+| -------------------------- | ------- | --------------------------- | 
+| carts/mine                 | PUT     | Save quote                  |
+| carts/mine                 | POST    | Creates an empty cart and quote for a specified customer if customer does not have a cart yet. |
+| carts/mine                 | GET     | Returns information for the cart for a specified customer.   |
+| carts/mine/balance/apply   | POST    | Apply store credit            |
+| carts/mine/billing-address | GET     | Returns the billing address for a specified quote.           |
+| carts/mine/billing-address | POST    | Assigns a specified billing address to a specified cart.     |
+| carts/mine/checkGiftCard/ {giftCardCode}    | GET    | Check gift card balance if applied to given cart.           |
+| carts/mine/collect-totals   | PUT     | Set shipping/billing methods and additional data for cart and collect totals. |
+| carts/mine/coupons          | GET     | Returns information for a coupon in a specified cart.        |
+| carts/mine/coupons          | DELETE  | Deletes a coupon from a specified cart.                      |
+| carts/mine/coupons/ {couponCode}      | PUT    | Adds a coupon by code to a specified cart.          |
+| carts/mine/delivery-option  | POST    | Handle selected delivery option.                             |
+| carts/mine/estimate-shipping-methods  | POST   | Estimate shipping by address and return list of available shipping methods. |
+| carts/mine/giftCards        | POST    | Add gift card to the cart.    |
+| carts/mine/giftCards/ {giftCardCode}  | DELETE | Remove GiftCard Account entity                      |
+| carts/mine/items            | POST    | Add/update the specified cart item.                          |
+| carts/mine/items/{itemId}   | PUT     | Add/update the specified cart item.                          |
+| carts/mine/items/{itemId}   | DELETE  | Removes the specified item from the specified cart.          |
+| carts/mine/order            | PUT     | Places an order for a specified cart.                        |
+| carts/mine/payment-information        | POST   | Set payment information and place order for a specified cart.  |
+| carts/mine/payment-information        | GET    | Get payment information                             |
+| carts/mine/payment-methods  | GET     | Lists available payment methods for a specified shopping cart. This call returns an array of objects, but detailed information about each object’s attributes might not be included.             |
+| carts/mine/totals           | GET     | Returns quote totals data for a specified cart.              |
+| carts/mine/totals-information         | POST   | Calculate quote totals based on address and shipping method.   |
+| products                    | GET     | Get product list              |
+| products/cost-information   | POST    | Return product prices. In case of at least one of skus is not found exception will be thrown. |
+| products/special-price-information    | POST   | Return product's special price. In case of at least one of skus is not found exception will be thrown. |
+| products/{sku}              | GET     | Get info about product by product SKU                        |
+| products/{sku}/media        | GET     | Retrieve the list of gallery entries associated with given product      |
+| products/{sku}/options      | GET     | Get the list of custom options for a specific product        |
+| products-render-info        | GET     | Collect and retrieve the list of product render info. This info contains raw prices and formatted prices, product name, stock status, store_id,  etc. |
+| search                      | GET     | Make Full Text Search and return found Documents             |
+| stockStatuses/{productSku}  | GET     | Get the stock statuses for a specific product                |
 
-### React Native
+## React Native
 
-#### Lifecycle
+### Lifecycle
 
 React component allows developer to divide the UI into independent and reusable units, and each unit can be drawn to  think independently. React component can be defined by inheriting React.Component or React.PureComponent. each component has several life cycle methods, developer can override these methods in order to execute certain programs at specific times during the development process. 
 
@@ -219,72 +219,48 @@ componentDidCatch(error, info)
 
   - componentDidCatch () will be called during "commit", so side effect is allowed.
 
-### Image Classification
+## Image Classification
 
 TensorFlow.js was released a versions for React Native and Expo applications. It allows developers to load per-trained models and train new models in the mobile application. In this project, TensorFlow.js and MobileNet per-trained model architecture will be used for to classification of input images in React Native application.
 
-## Development Difficulties
+\newpage
 
-Since the project time period limitation and the requirement of the CST student, the mainly development in this project will more force on how to use a cross-platform language can be use to built a native like mobile application that can function on both iOS and Android system. Therefore, the web store with Mangeto is only have the basic function that provided by the framework and the development of the mobile application for designers is cut off.
+## UI Design - Mobile Platform
 
-In addition, the version of the React Native I used is the latest version. However, some of the plugins are not yet support the latest one, like use Apple Pay / Google Pay for in-store purchase, therefore it cannot be provided in this demo. 
+### Connected with Magento API
 
-Lastly, the image recognition function need a huge library which have trained. During to the time limited,  MobileNet pre-trained model is used for the image recognition. The data which the model provided is not what this project need, therefore it is only for demo usage only.
+This section shows the user interface of the mobile application which call the Magento API and get the data to render.
 
-## UI Design
+As given in Figure 4.1(a), our index page will show the banner, discount product, and the hot product.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
-
-### Mobile Platform
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
-
-<<<<<<< HEAD
-This is the user interface of the mobile application which call the Magento API and get the data to render.
-
-![Index Page \label{ref_a_figure}](source/figures/01.png){ width=50% }
-
-Index Page will show the banner, discount product, and the hot product.
-
-![Product Detail \label{ref_a_figure}](source/figures/02.png){ width=50% }
-
-Product Detail will show the product gallery, basic information and the option of the product. 
-
-![Explore \label{ref_a_figure}](source/figures/03.png){ width=50% }
-
-Search page use for search the product by keywords.
-
-![Login \label{ref_a_figure}](source/figures/04.png){ width=50% }
-
-#### Withoutconnect Magento API
-
-This is the user interface of the mobile application with the dump data and for test the development function. The reason why have this version of the applicaiton is because before put one function on the connected API version, we need to see the funtion is there any error or conflict which will affect the API version.
-
-![Index Page \label{ref_a_figure}](source/figures/05.png){ width=50% }
-=======
-#### Connected with Magento API
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
+Product Detail, as given in Figure 4.1(b), will show the product gallery, basic information and the option of the product. 
 
 ![(a) Index Page, (b) Product Detail](source/figures/0102.png){width=100%}
 
+Search page, as given in Figure 4.2(a), uses for search the product by keywords.
+
+Figure 4.2(b) shows the login page.
+
 ![(a) Explore, (b) Login](source/figures/0304.png){width=100%}
 
-#### Withoutconnect Magento API
+### Withoutconnect Magento API
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@simon_2019_tech]
->>>>>>> master
+This is the user interface of the mobile application with the dump data and for test the development function. The reason why have this version of the applicaiton is because before put one function on the connected API version, we need to see the funtion is there any error or conflict which will affect the API version.
+
+Figure 4.3 shows the index and catalog pages:
 
 ![(a) Index Page, (b) Catalog](source/figures/0506.png){width=100%}
 
+Figure 4.4 shows the product detail and search pages:
+
 ![(a) Product Detail, (b) Search](source/figures/0708.png){width=100%}
 
-### Web Platform
+## UI Design - Web Platform
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. [@blair_2019_mobile]
+Figure 4.5, 4.6 and 4.7 show index page, product detail page adn checkout pages of our web platform.
 
-![Index Page \label{ref_a_figure}](source/figures/09.jpg){width=100%}
+![Index page \label{ref_a_figure}](source/figures/09.jpg){width=100%}
 
-![Product Detail \label{ref_a_figure}](source/figures/10.jpg){width=100%}
+![Product Detail \label{ref_a_figure}](source/figures/10.jpg){width=100%} 
 
 ![Checkout \label{ref_a_figure}](source/figures/11.png){width=100%}
