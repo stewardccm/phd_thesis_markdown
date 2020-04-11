@@ -17,3 +17,4 @@ As a summary to the entire development of the system, it was surely full of chal
 3. Customised service
 
    Some of the customers are looking for the customised service but not the finished project. It is a chance to let different designers to provide their ideas and even get some resource.
+   
