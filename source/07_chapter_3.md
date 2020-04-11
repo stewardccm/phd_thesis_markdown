@@ -2,11 +2,11 @@
 
 ## Mobile App Platform
 
-Since the opening of Apple App Store in 2008, the number of mobile applications has reached more than 2 million on both Android and iOS platforms in more than a decade. Today, urbanites use their mobile phones to access the Internet every fat to do a variety of things, including online financial management, Instagram and trading. Some people can forget to take their wallets out of the street, but they can't go out without their smart phones. 
+Since the opening of Apple App Store in 2008, the number of mobile applications has reached more than 2 million on both Android and iOS platforms in more than a decade. [@blair_2019_mobile] Today, urbanites use their mobile phones to access the Internet every fat to do a variety of things, including online financial management, Instagram and trading. Some people can forget to take their wallets out of the street, but they can't go out without their smart phones. 
 
 The development of mobile applications is also all the rage. To this day, mobile application development has gradually evolved into different types, and companies can choose the type of development suitable for the enterprise's mobile application according to their needs, resources, development time, and so on.
 
-### Native App
+### Native App [@simon_2019_tech]
 
 Native app means develop an application using the native programming language of the mobile system. From the earliest ObjectiveC to Swift for iOS, or Java to Kotlin for Android, are the most direct development methods. In theory, native applications should be able to make the most of all the capabilities of the phone and achieve the best user experience.
 
@@ -14,7 +14,7 @@ Native applications can change immediately following the upgrade of the mobile p
 
 In contrast, the disadvantage of native applications is that the development cost is relatively high. In the iOS or Android market, sometimes even PC users need to taken into account. Unless under special requirements, it is basically necessary to support users on more than two platforms at the same time. With multiple platforms being developed separately, it is not uncommon to double the cost and time of development.
 
-### Hybrid App / Cross-platform App
+### Hybrid App / Cross-platform App [@simon_2019_tech]
 
 When the problems of time and development cost of native applications become more and more obvious, the market naturally has relative solutions at the historic moment, and this is the hybrid application.
 
@@ -78,7 +78,7 @@ What types of developers is Flutter suitable for:
 2. The product needs to be online in the fastest time
 3. Those with higher UI performance requirements
 
-### Web App / Progressive Web Application
+### Web App / Progressive Web Application [@simon_2019_tech]
 
 To put it plainly, the Web App is just a web page, but this kind of web page is mostly built using the framework of Single page Applications. With the development of browsers on mobile phones in recent years, web apps have been able to give users the feeling of being very close to native applications.
 

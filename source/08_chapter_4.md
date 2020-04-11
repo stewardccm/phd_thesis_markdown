@@ -84,7 +84,7 @@ Compared with other database structures, EAV has greater flexibility to allow de
 
 Magenta 2 comes with APIs based on SOAP and REST. There is no longer an API based on XML-RPC. From the perspective of business logic, APIs based on SOAP and REST are equivalent. In addition to providing programmers with a way to programmatically interact with a single independent Magento instance without writing native Magento or PHP code, the Magento 2 REST API is also designed to allow browser-based client-side Javascript code to access API calls. Becasue this project uses React Native, which is mainly in Javascript, as a mobile application development, Magento 2 REST API is the main API method, so the data obtained through the API will be returned in JSON format.
 
-Magento 2 REST APIs used in this project: 
+Magento 2 REST APIs used in this project [@magento_api]: 
 
 | Endpoint                   | Method  | Description                 |
 | -------------------------- | ------- | --------------------------- | 
@@ -221,7 +221,7 @@ componentDidCatch(error, info)
 
 ## Image Classification
 
-TensorFlow.js was released a versions for React Native and Expo applications. It allows developers to load per-trained models and train new models in the mobile application. In this project, TensorFlow.js and MobileNet per-trained model architecture will be used for to classification of input images in React Native application.
+TensorFlow.js was released a versions for React Native and Expo applications. It allows developers to load per-trained models and train new models in the mobile application. In this project, TensorFlow.js and MobileNet per-trained model architecture are used for to classification of input images in React Native application.
 
 \newpage
 
